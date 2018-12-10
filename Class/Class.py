@@ -1,9 +1,8 @@
 
 class A:
 
-    def __init__(self, data='A'):
-        self.data = data
-        print("A: ", self.data)
+    def __init__(self):
+        print("A")
 
     def say(self):
         print("A say")
@@ -12,7 +11,8 @@ class A:
 class B(A):
 
     def __init__(self, data='B'):
-        super().__init__(data)
+        super().__init__()
+        A.__init__(self)
         self.data = data
         print("B: ", self.data)
 
