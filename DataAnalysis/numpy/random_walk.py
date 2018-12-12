@@ -41,8 +41,8 @@ print(hits30.sum())
 print(hits30)
 print(walks)
 
-print((walks[hits30]))                  # boolean indexing
-print((walks[hits30]).shape)
+# print((walks[hits30]))                  # boolean indexing
+# print((walks[hits30]).shape)
 
 crossing_times = (np.abs(walks[hits30]) >= 30).argmax(axis=1)
 print(crossing_times)
