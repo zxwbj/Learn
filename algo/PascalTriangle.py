@@ -2,10 +2,10 @@ class Solution:
     def PascalTriangle(self, k):
         if 0 == k:
             return [1]
-        elif 1 == k:
-            return [1, 1]
-        elif 2 == k:
-            return [1, 2, 1]
+        # elif 1 == k:
+        #     return [1, 1]
+        # elif 2 == k:
+        #     return [1, 2, 1]
 
         pl = [0 for i in range(k+1)]
         pl[0] = 1
